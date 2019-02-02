@@ -400,5 +400,12 @@ PRODUCT_COPY_FILES += \
 # Model is set via init library
 PRODUCT_SYSTEM_PROPERTY_BLACKLIST := \
     ro.product.model
+#LePref
+PRODUCT_PACKAGES += \
+    LePref
+
+PRODUCT_PACKAGES += \
+    init.profile.sh \
+    init.spectrum.rc
 
 $(call inherit-product, vendor/leeco/msm8996-common/msm8996-common-vendor.mk)
